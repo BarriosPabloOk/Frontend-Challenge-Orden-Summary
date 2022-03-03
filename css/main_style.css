@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-color: hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: grid;
+  align-items: center;
+}
+
+.card {
+  border-radius: 18px;
+  background: hsl(0, 0%, 100%);
+  margin: 25px;
+  min-width: 325px;
+}
+.card__banner {
+  width: 100%;
+}
+.card__hero {
+  width: 100%;
+  height: auto;
+  border-radius: 18px 18px 0 0;
+  margin-bottom: 10px;
+}
+.card__info {
+  padding: 15px 30px;
+}
+.card__text {
+  text-align: center;
+}
+.card__title {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+.card__description {
+  margin-bottom: 27px;
+  color: hsl(223, 22%, 51%);
+  line-height: 27px;
+}
+.card__price {
+  border-radius: 7px;
+  background: hsl(225, 100%, 98%);
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.card__plan {
+  font-size: 0.9em;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  margin-left: 15px;
+  margin-right: 35px;
+}
+.card__plan span {
+  font-size: 0.999em;
+  font-weight: 400;
+  color: hsl(223, 22%, 51%);
+}
+.card__change-button {
+  font-size: 0.8em;
+  text-decoration: underline;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+
+.card__change-button:hover {
+  text-decoration: none;
+  color: hsl(245, 67%, 66%);
+}
+
+.card__pay-button {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 7px;
+  box-shadow: 0px 20px 30px 0 hsl(245, 48%, 86%);
+  border: 0px;
+  border-radius: 7px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  font-size: 0.9em;
+}
+.card__pay-button:hover {
+  background-color: hsl(245, 67%, 66%);
+}
+.card__cancel-button {
+  width: 100%;
+  display: block;
+  padding: 15px;
+  border: 0px;
+  color: hsl(223, 22%, 51%);
+  background-color: transparent;
+  font-weight: 900;
+  font-size: 0.9em;
+}
+.card__cancel-button:hover {
+  color: hsl(223, 47%, 23%);
+}
