@@ -20,6 +20,7 @@ body {
   background: hsl(0, 0%, 100%);
   margin: 25px;
   min-width: 325px;
+  box-shadow: 0px 20px 30px 0 hsl(245, 48%, 86%);
 }
 .card__banner {
   width: 100%;
@@ -61,6 +62,7 @@ body {
   color: hsl(223, 47%, 23%);
   margin-left: 15px;
   margin-right: 35px;
+  width: 100%;
 }
 .card__plan span {
   font-size: 0.999em;
@@ -72,6 +74,7 @@ body {
   text-decoration: underline;
   color: hsl(245, 75%, 52%);
   font-weight: 700;
+  justify-self: end;
 }
 
 .card__change-button:hover {
@@ -106,4 +109,24 @@ body {
 }
 .card__cancel-button:hover {
   color: hsl(223, 47%, 23%);
+}
+
+@media screen and (min-width: 450px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+  }
+  .card {
+    min-width: 325px;
+    max-width: 400px;
+    height: auto;
+    margin: auto;
+  }
+  .card__info {
+    padding: 20px 40px;
+  }
+  /*   .card__plan {
+    margin-left: 20px;
+    margin-right: 100px;
+  } */
 }
