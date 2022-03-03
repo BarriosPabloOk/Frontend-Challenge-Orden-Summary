@@ -7,24 +7,22 @@
 
 body {
   height: 100vh;
-  background-image: url(../images/pattern-background-mobile.svg);
+  background-image: url(../images/pattern-background-mobile.svg) no-repeat top
+    center;
   background-color: hsl(225, 100%, 94%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-size: contain;
+  padding: 25px;
   display: grid;
-  align-items: center;
+  place-content: center;
 }
 
 .card {
   border-radius: 18px;
   background: hsl(0, 0%, 100%);
-  margin: 25px;
   min-width: 325px;
   box-shadow: 0px 20px 30px 0 hsl(245, 48%, 86%);
 }
-.card__banner {
-  width: 100%;
-}
+
 .card__hero {
   width: 100%;
   height: auto;
@@ -33,8 +31,6 @@ body {
 }
 .card__info {
   padding: 15px 30px;
-}
-.card__text {
   text-align: center;
 }
 .card__title {
@@ -60,8 +56,6 @@ body {
   font-size: 0.9em;
   font-weight: 900;
   color: hsl(223, 47%, 23%);
-  margin-left: 15px;
-  margin-right: 35px;
   width: 100%;
 }
 .card__plan span {
